@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvel Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Marvel Explorer</h1>
+    <div class="toolbar">
+      <div id="searchDiv">
+        <input type="text" id="marvelInput" placeholder="Search characters or comics" />
+        <button id="inputButton">Search</button>
+      </div>
+      <button id="themeToggle">🌙</button>
+    </div>
+    <nav>
+      <button class="tab active" data-type="characters">Characters</button>
+      <button class="tab" data-type="comics">Comics</button>
+      <button class="tab" data-type="favorites">Favorites</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="dataDiv" class="card-grid"></div>
+    <div id="loadMoreDiv"><button id="loadMoreBtn">Load More</button></div>
+  </main>
+
+  <div class="modal"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
